@@ -225,3 +225,46 @@
     </section>
 
     <hr>
+
+     <section id="contacto" class="contact-section">
+        <h2 class="section-title">Contáctanos</h2>
+        <div class="contact-grid">
+            
+            <form action="#" method="POST" class="contact-form">
+                <h3>Envíanos un Mensaje</h3>
+                <label for="nombre">Nombre (*)</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" class="error">
+                <span class="error-message">Este campo es obligatorio.</span>
+                
+                <label for="apellidos">Apellidos (*)</label>
+                <input type="text" id="apellidos" name="apellidos" required placeholder="Tus apellidos" class="error">
+                <span class="error-message">Este campo es obligatorio.</span>
+
+                <label for="ciudad">Ciudad (*)</label>
+                <input type="text" id="ciudad" name="ciudad" required placeholder="Tu ciudad">
+
+                <label for="email">Correo Electrónico (*)</label>
+                <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com" class="error">
+                <span class="error-message">El formato del correo es incorrecto.</span>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Opcional">
+
+                <label for="consulta">Tipo de Consulta (*)</label>
+                <select id="consulta" name="consulta" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="adopcion">Adopción</option>
+                    <option value="donacion">Donación</option>
+                    <option value="voluntariado">Voluntariado</option>
+                    <option value="informacion">Información general</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="mensaje">Mensaje (*)</label>
+                <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje..."></textarea>
+                
+                <button type="submit">Enviar Mensaje</button>
+
+                <div class="success-message" style="display: none;">
+                    ¡Gracias por contactarnos! Tu mensaje ha sido enviado.
+                </div>
